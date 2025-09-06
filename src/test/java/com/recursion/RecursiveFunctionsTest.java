@@ -59,9 +59,9 @@ class RecursiveFunctionsTest {
 
     @Test
     public void testRecursiveRemove() {
-        assertEquals(1, recursiveRemove(new ArrayList<>(List.of("a", "b", "c")), "c"));
-        assertEquals(3, recursiveRemove(new ArrayList<>(List.of("b", "b", "b")), "b"));
-        assertEquals(0, recursiveRemove(new ArrayList<>(List.of("c", "b", "c")), "a"));
+        assertEquals(1, recursiveRemove(new ArrayList<>(List.of("a", "b", "c")), "c",0));
+        assertEquals(3, recursiveRemove(new ArrayList<>(List.of("b", "b", "b")), "b",0));
+        assertEquals(0, recursiveRemove(new ArrayList<>(List.of("c", "b", "c")), "a",0));
     }
 
     @Test
